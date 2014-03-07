@@ -49,7 +49,7 @@
 
             NSMutableArray *neighbors = [self findNeighbors:index];
 
-            if (neighbors.count < _minNumberOfPoints) {
+            if (neighbors.count < (_minNumberOfPoints - 1)) {
                 [_noise addObject:current];
             }
             else {
